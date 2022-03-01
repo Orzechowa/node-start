@@ -7,7 +7,9 @@ const ages = ['18','22', '30'];
 randChoice = (arr) => {
   return arr[Math.floor(Math.random() * arr.length)];
 };
+
 const people = [];
+
 for (i = 0; i < 20; i++) {
   let person = {};
 
@@ -21,7 +23,7 @@ for (i = 0; i < 20; i++) {
 
   person.lastname = lastNames[Math.floor(Math.random() * lastNames.length)];
 
-  person.age = ages[Math.floor(Math.random() * ages.length)];
+  person.age = Math.floor(Math.random() * (78 - 18 + 1) + 18);
 
   people.push(person);
 };
